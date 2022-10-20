@@ -1,0 +1,7 @@
+onEvent("id", "change", function( ) {
+  // id is the name of the dropdown
+  //id change menas whenerver they change
+  // first option has to be a zero width space
+  setText("di", "no bugs pls");
+  //sets the text
+});
