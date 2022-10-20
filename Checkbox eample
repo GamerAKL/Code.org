@@ -1,0 +1,8 @@
+onEvent("checkbox1", "change", function( ) {
+  // make sure checkbox is set to change
+ onEvent("button1", "click", function( ) {
+   //make sure that they are set to diferent objects
+ setText("label1", getText("text_input1"));
+ //used for seting the label
+ });
+});
