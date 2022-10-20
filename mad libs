@@ -1,0 +1,71 @@
+// name is a variable that states your name to place in other parts of the code
+var name = prompt("Enter a name");
+//location is a variable that states the locataion you chose to place in other parts of the code
+var location = prompt("Enter a location");
+//planet is a variable that states the planet you chose to place in other parts of the code
+var planet = prompt("Enter a planet name");
+// the "par" variables are where the story is stored each one is diferent
+var par_1 = "once upon a time there was a person named" + " " + name +". ";
+var par_2 = ("There favorite place to go was " + location +".");
+var par_3 = (" then they found out that " + location + ". " + "was nuked and they had to go off to a different planet. ");
+var par_4 = ("After a long time they finally decide on the planet " + planet + ". ");
+var par_5 = ("With only a few hours left before the world imploded from the nuke they hopped on the space ship to " + planet + ". ");
+var par_6 = ("Once they got there they realized that " + planet + ". " + "didn't have breathable air. " + "And they passed away. " );
+var par_7 = ("A funeral was held in their honor " + name +" and " + planet + " will be missed");
+//The "par" buttons add text to the display along with voice lines
+onEvent("par1button", "click", function( ) {
+setText("display", par_1);
+hideElement("par1button");
+showElement("par2button");
+playSpeech(par_1, "male", "English");
+});
+onEvent("par2button", "click", function( ) {
+  setText("display", par_1 + par_2 );
+  hideElement("par2button");
+  showElement("par3button");
+  playSpeech(par_2, "male", "English");
+});
+onEvent("par3button", "click", function( ) {
+  setText("display", par_1 + par_2 + par_3);
+  hideElement("par3button");
+  showElement("par4button");
+  playSpeech(par_3 , "male", "English");
+});
+onEvent("par4button", "click", function( ) {
+  setText("display", par_1 + par_2 + par_3 + par_4);
+  showElement("par5button");
+  hideElement("par4button");
+  playSpeech(par_4, "male", "English");
+});
+onEvent("par5button", "click", function( ) {
+  setText("display", par_1 + par_2 + par_3 + par_4 + par_5);
+  showElement("par6button");
+  hideElement("par5button");
+  playSpeech(par_5, "male", "English");
+});
+//displays image of planet exploading
+onEvent("par6button", "click", function( ) {
+  setText("display", par_1 + par_2 + par_3 + par_4 + par_5 + par_6);
+  showElement("par7button");
+  hideElement("par6button");
+  playSpeech(par_6, "male", "English");
+showElement("planet_img");
+});
+//The "par" 7 button loops back to the "par" 1 
+onEvent("par7button", "click", function( ) {
+  showElement("par1button");
+  hideElement("par7button");
+  playSpeech(par_7, "male", "English");
+  hideElement("planet_img");
+});
+//debug button is a debug feature used to skip to the very last paragrapgh button hidden when not needed
+onEvent("debug_button", "click", function( ) {
+  hideElement("par1button");
+  hideElement("par2button");
+  hideElement("par3button");
+ hideElement("par4button");
+  hideElement("par5button");
+  hideElement("par6button");
+  hideElement("terms");
+  showElement("par7button");
+});
