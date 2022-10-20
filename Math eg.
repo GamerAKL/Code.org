@@ -1,0 +1,25 @@
+onEvent("tipcalc", "click", function( ) {
+  var x = getText("tipinput");
+  var y = x * 1.15;
+  setText("tipawnser", "Your tip is " +y + "$" );
+  });
+//tip calc mutilplys the number by 15%
+onEvent("convert", "click", function( ){
+var cnd = getText ("cndinp");
+var yen = cnd * 107.59;
+setText("yen2", yen, + "¥" + "Y");
+});
+//converts between cnd and yen
+onEvent("convert2", "click", function( ){
+var yen2 = getText ("yeninp");
+var cnd2 = yen2 / 107.59;
+setText("yen2", cnd2, + "$" + "");
+});
+//converts between yen and cnd
+onEvent("tricalc", "click", function( ){
+  var a2 = getText("a2") * getText("a2");
+  var b2 = getText("b2") * getText("b2") + a2;
+  var c2 = Math.sqrt(b2);
+  setText("hype", c2 );
+ // multiplys by itself and adds other number
+});
