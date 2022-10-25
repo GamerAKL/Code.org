@@ -5,3 +5,10 @@ onEvent("id", "change", function( ) {
   setText("di", "no bugs pls");
   //sets the text
 });
+ 
+  // beter example
+  
+ onEvent("id", "change", function( ) {
+if (getText("id") == "test") 
+ setImageURL("image1", "https://urlname");
+ });
