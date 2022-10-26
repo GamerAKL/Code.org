@@ -1,0 +1,5 @@
+//if statments are used to help skip lines of code
+//they work using boolean logic
+//booleans can be true or false
+//in math  5>4 true 4>5 false 5==4 false
+//! means not 5!=4 true 
