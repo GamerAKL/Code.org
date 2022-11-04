@@ -1,0 +1,357 @@
+var x = randomNumber(1, 118);
+  setText("label3", x);
+  if (x == 1) {
+    setText("label1", "Hydrogen");
+  }
+  if (x == 2) {
+    setText("label1", "helium");
+
+  }
+  if (x == 3) {
+    setText("label1", "Lithium");
+  }
+  if (x == 4) {
+    setText("label1", "Berilium");
+  }
+  if (x == 5) {
+    setText("label1", "Boron");
+  }
+  if (x == 6) {
+    setText("label1", "Carbon");
+  }
+  if (x == 7) {
+    setText("label1", "Nitrogen");
+  }
+  if (x == 8) {
+    setText("label1", "Oxygen");
+  }
+  if (x == 9) {
+    setText("label1", "Florine");
+  }
+  if (x == 10) {
+    setText("label1", "Neon");
+  }
+  if (x == 11) {
+    setText("label1", "Sodium");
+  }
+  if (x == 12) {
+    setText("label1", "Magnesium");
+  }
+  if (x == 13) {
+    setText("label1", "Aluminium");
+  }
+  if (x == 14) {
+    setText("label1", "Silicon");
+  }
+  if (x == 15) {
+    setText("label1", "Phosphorus");
+  }
+  if (x == 16) {
+    setText("label1", "Sulfur");
+  }
+  if (x == 17) {
+    setText("label1", "Chlorine");
+  }
+  if (x == 18) {
+    setText("label1", "Argon");
+  }
+  if (x == 19) {
+    setText("label1", "Potassium");
+  }
+  if (x == 20) {
+    setText("label1", "Calcium");
+  }
+  if (x == 21) {
+    setText("label1", "Scandium");
+  }
+  if (x == 22) {
+    setText("label1", "Titanium");
+  }
+  if (x == 23) {
+    setText("label1", "Vanadium");
+  }
+  if (x == 24) {
+    setText("label1", "Chromium");
+  }
+  if (x == 25) {
+    setText("label1", "Manganise");
+  }
+  if (x == 26) {
+    setText("label1", "Iron");
+  }
+  if (x == 27) {
+    setText("label1", "Cobalt");
+  }
+  if (x == 28) {
+    setText("label1", "Nickle");
+  }
+  if (x == 29) {
+    setText("label1", "Copper");
+  }
+  if (x == 30) {
+    setText("label1", "Zinc");
+  }
+  if (x == 31) {
+    setText("label1", "Galium");
+  }
+  if (x == 32) {
+    setText("label1", "Germainium");
+  }
+  if (x == 33) {
+    setText("label1", "Arsenic");
+  }
+  if (x == 34) {
+    setText("label1", "Selenium");
+  }
+  if (x == 35) {
+    setText("label1", "Bromine");
+  }
+  if (x == 36) {
+    setText("label1", "Krypton");
+  }
+  if (x == 37) {
+    setText("label1", "Rubidium");
+  }
+  if (x == 38) {
+    setText("label1", "Strotium");
+  }
+  if (x == 39) {
+    setText("label1", "Ytrium");
+  }
+  if (x == 40) {
+    setText("label1", "Ziricromium");
+  }
+  if (x == 41) {
+    setText("label1", "Nibonium");
+  }
+  if (x == 42) {
+    setText("label1", "Molydbium");
+  }
+  if (x == 43) {
+    setText("label1", "Technitium");
+  }
+  if (x == 44) {
+    setText("label1", "Ruthenium");
+  }
+  if (x == 45) {
+    setText("label1", "Rhodium");
+  }
+  if (x == 46) {
+    setText("label1", "Padlium");
+  }
+  if (x == 47) {
+    setText("label1", "Silver");
+  }
+  if (x == 48) {
+    setText("label1", "Cadmium");
+  }
+  if (x == 49) {
+    setText("label1", "Indium");
+  }
+  if (x == 50) {
+    setText("label1", "Tin");
+  }
+  if (x == 51) {
+    setText("label1", "Antimony");
+  }
+  if (x == 52) {
+    setText("label1", "Tellurium");
+  }
+  if (x == 53) {
+    setText("label1", "Iodine");
+  }
+  if (x == 54) {
+    setText("label1", "Xenon");
+  }
+  if (x == 55) {
+    setText("label1", "Ceaseium");
+  }
+  if (x == 56) {
+    setText("label1", "Barium");
+  }
+  if (x == 57) {
+    setText("label1", "Lanthuim");
+  }
+  if (x == 58) {
+    setText("label1", "Cerium");
+  }
+  if (x == 59) {
+    setText("label1", "Praseodymium");
+  }
+  if (x == 60) {
+    setText("label1", "Neodimium");
+  }
+  if (x == 61) {
+    setText("label1", "Promithium");
+  }
+  if (x == 62) {
+    setText("label1", "Samaranium");
+  }
+  if (x == 63) {
+    setText("label1", "Euorpeium");
+  }
+  if (x == 64) {
+    setText("label1", "Gadolium");
+  }
+  if (x == 65) {
+    setText("label1", "Turbium");
+  }
+  if (x == 66) {
+    setText("label1", "Dyspromium");
+  }
+  if (x == 67) {
+    setText("label1", "Holmium");
+  }
+  if (x == 68) {
+    setText("label1", "Erbium");
+  }
+  if (x == 69) {
+    setText("label1", "Thulium");
+  }
+  if (x == 70) {
+    setText("label1", "Yitrybium");
+  }
+  if (x == 71) {
+    setText("label1", "Lutium");
+  }
+  if (x == 72) {
+    setText("label1", "Hafnium");
+  }
+  if (x == 73) {
+    setText("label1", "Tantalum");
+  }
+  if (x == 74) {
+    setText("label1", "Tungstin");
+  }
+  if (x == 75) {
+    setText("label1", "Rheinium");
+  }
+  if (x == 76) {
+    setText("label1", "Osmium");
+  }
+  if (x == 77) {
+    setText("label1", "Iridium");
+  }
+  if (x == 78) {
+    setText("label1", "Platinum");
+  }
+  if (x == 79) {
+    setText("label1", "Gold");
+  }
+  if (x == 80) {
+    setText("label1", "Murcury");
+  }
+  if (x == 81) {
+    setText("label1", "Thalium");
+  }
+  if (x == 82) {
+    setText("label1", "Lead");
+  }
+  if (x == 83) {
+    setText("label1", "Bismith");
+  }
+  if (x == 84) {
+    setText("label1", "Polinium");
+  }
+  if (x == 85) {
+    setText("label1", "Astatine");
+  }
+  if (x == 86) {
+    setText("label1", "Radon");
+  }
+  if (x == 87) {
+    setText("label1", "Francium");
+  }
+  if (x == 88) {
+    setText("label1", "Radium");
+  }
+  if (x == 89) {
+    setText("label1", "Actinium");
+  }
+  if (x == 90) {
+    setText("label1", "Thorium");
+  }
+  if (x == 91) {
+  setText("label1", "Proactinium");
+}
+if (x == 92) {
+  setText("label1", "Uranium");
+}
+if (x == 93) {
+  setText("label1", "Nuptunium");
+}
+if (x == 94) {
+  setText("label1", "Plutonium");
+}
+if (x == 95) {
+  setText("label1", "Americium");
+}
+if (x == 96) {
+  setText("label1", "Curium");
+}
+if (x == 97) {
+  setText("label1", "Berkelium");
+}
+if (x == 98) {
+  setText("label1", "Calaforium");
+}
+if (x == 99) {
+  setText("label1", "Enstinium");
+}
+if (x == 100) {
+  setText("label1", "Fermium");
+}
+if (x == 101) {
+  setText("label1", "Mandalevium");
+}
+if (x == 102) {
+  setText("label1", "Nobelium");
+}
+if (x == 103) {
+  setText("label1", "Lawreincium");
+}
+if (x == 104) {
+  setText("label1", "Rutherfordium");
+}
+if (x == 105) {
+  setText("label1", "Dubnium");
+}
+if (x == 106) {
+  setText("label1", "Seaborgium");
+}
+if (x == 107) {
+  setText("label1", "Borhium");
+}
+if (x == 108) {
+  setText("label1", "Hassium");
+}
+if (x == 109) {
+  setText("label1", "Metinirium");
+}
+if (x == 110) {
+  setText("label1", "Damstadtium");
+}
+if (x == 11) {
+  setText("label1", "Roentgenium");
+}
+if (x == 112) {
+  setText("label1", "Copernicium");
+}
+if (x == 113) {
+  setText("label1", "Nihonium");
+}
+if (x == 114) {
+  setText("label1", "Flerovium");
+}
+if (x == 115) {
+  setText("label1", "Moscovium");
+}
+if (x == 116) {
+  setText("label1", "Livermorium");
+}
+if (x == 117) {
+  setText("label1", "Tenissine");
+}
+if (x == 118) {
+  setText("label1", "Oganisson");
+}
