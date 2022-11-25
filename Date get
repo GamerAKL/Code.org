@@ -1,0 +1,32 @@
+var dateCheck;
+var month;
+var day;
+var hours;
+var year;
+var minutes;
+var date_monthDay;
+var date_hourMinute;
+
+newDateCheck();
+console.log("Full Date: " + dateCheck);
+console.log("Month: " + month);
+console.log("Day: " + day);
+console.log("Hours: " + hours);
+console.log("Minutes: " + minutes);
+console.log("Month + Day: " + date_monthDay);
+console.log("Hour + Minutes: " + date_hourMinute);
+
+//gets the current date
+function newDateCheck(){
+  dateCheck = new Date();
+  month = dateCheck.getMonth() + 1;
+  day = dateCheck.getDate();
+  hours = dateCheck.getHours();
+  year = dateCheck.getFullYear();
+  minutes = dateCheck.getMinutes();
+  if(minutes < 10){
+    minutes = "0" + minutes;
+  }
+  date_monthDay = month + "-" + day;
+  date_hourMinute = hours + ":" + minutes;
+}
