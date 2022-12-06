@@ -49,3 +49,54 @@ onEvent("screen2", "keyup", function(event) {
     keys[1] = false;
   }
 });
+
+
+
+
+//
+//
+//
+//modified vesion for pen up and down
+//
+//
+onEvent("button10", "click", function(event) {
+  timedLoop(17, function() {
+    xVel = 0;
+    yVel = 0;
+    if (keys[0]) {
+      xVel += -5;
+    }
+    if (keys[1]) {
+      xVel += 5;
+    }
+    if (keys[2]) {
+      yVel += -5;
+    }
+    if (keys[3]) {
+      yVel += 5;
+    }
+    moveTo(getX()+xVel, getY()+yVel);
+  });
+});
+onEvent("screen2", "keydown", function(event) {
+  if (event.key == ("w" || "Up")) {
+    keys[2] = true;
+  } else if ((event.key == ("s" || "Down"))) {
+    keys[3] = true;
+  } else if ((event.key == ("a" || "Left"))) {
+    keys[0] = true;
+  } else if ((event.key == ("d" || "Right"))) {
+    keys[1] = true;
+  }
+});
+onEvent("screen2", "keyup", function(event) {
+  if (event.key == ("w" || "Up")) {
+    keys[2] = false;
+  } else if ((event.key == ("s" || "Dowm"))) {
+    keys[3] = false;
+  } else if ((event.key == ("a" || "Left"))) {
+    keys[0] = false;
+  } else if ((event.key == ("d" || "Right"))) {
+    keys[1] = false;
+  }
+});
