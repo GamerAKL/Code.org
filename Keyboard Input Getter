@@ -1,0 +1,51 @@
+var xVel = 0;
+var yVel = 0;
+var keys = [false, false, false, false];
+// keys is an array that represents whether a certain
+// key is currently pressed
+// keys[0] -> left
+// keys[1] -> right
+// keys[2] -> up
+// keys[3] -> down
+onEvent("button1", "click", function(event) {
+  setScreen("screen2");
+  timedLoop(17, function() {
+    xVel = 0;
+    yVel = 0;
+    if (keys[0]) {
+      xVel += -5;
+    }
+    if (keys[1]) {
+      xVel += 5;
+    }
+    if (keys[2]) {
+      yVel += -5;
+    }
+    if (keys[3]) {
+      yVel += 5;
+    }
+    setPosition("image1", getXPosition("image1")+xVel, getYPosition("image1")+yVel);
+  });
+});
+onEvent("screen2", "keydown", function(event) {
+  if (event.key == "Up") {
+    keys[2] = true;
+  } else if ((event.key == "Down")) {
+    keys[3] = true;
+  } else if ((event.key == "Left")) {
+    keys[0] = true;
+  } else if ((event.key == "Right")) {
+    keys[1] = true;
+  }
+});
+onEvent("screen2", "keyup", function(event) {
+  if (event.key == "Up") {
+    keys[2] = false;
+  } else if ((event.key == "Down")) {
+    keys[3] = false;
+  } else if ((event.key == "Left")) {
+    keys[0] = false;
+  } else if ((event.key == "Right")) {
+    keys[1] = false;
+  }
+});
