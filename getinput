@@ -1,0 +1,39 @@
+
+  function collision(u, s) {
+   //collsion chcks if spite is toching anything
+  u.collide(rightEdge);
+  u.collide(leftEdge);
+  u.collide(bottomEdge);
+  u.collide(topEdge);
+  if (u.isTouching(s)) {
+    u.bounceOff(s);
+  }
+}
+function move(u) {
+  //Keybord controlls take a input and applys/removes velocity
+  if (keyDown("w")) {
+   u.velocityY = -5;
+    }
+  if (keyWentUp("w")) {
+      u.velocityY = 0;
+    }
+  if (keyDown("s")) {
+    u.velocityY = 5;
+    }
+  if (keyWentUp("s")) {
+     u.velocityY = 0;
+    }
+  if (keyDown("a")) {
+    u.velocityX = -5;
+    }
+  if (keyWentUp("a")) {
+   u.velocityX = 0;
+    }
+  if (keyDown("d")) {
+    u.velocityX = 5;
+    }
+  if (keyWentUp("d")) {
+   u.velocityX = 0;
+    }
+    // collision is called to test if its touching anthing
+}
